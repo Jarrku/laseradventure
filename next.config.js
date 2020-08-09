@@ -7,7 +7,7 @@ module.exports = withOffline(
   withFonts(
     withOptimizedImages({
       /* config for next-optimized-images */
-      inlineImageLimit: -1,
+      // inlineImageLimit: -1,
     })
   )
 );
