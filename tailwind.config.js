@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: false,
   target: 'relaxed',
   prefix: '',
   important: false,
@@ -232,6 +232,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Titillium Web',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -246,6 +247,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
+      heading: ["Oswald"],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
@@ -262,15 +264,15 @@ module.exports = {
       '6xl': '4rem',
     },
     fontWeight: {
-      hairline: '100',
-      thin: '200',
+      // hairline: '100',
+      // thin: '200',
       light: '300',
       normal: '400',
       medium: '500',
       semibold: '600',
-      bold: '700',
-      extrabold: '800',
-      black: '900',
+      // bold: '700',
+      // extrabold: '800',
+      // black: '900',
     },
     height: theme => ({
       auto: 'auto',

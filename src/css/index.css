@@ -10,9 +10,19 @@ html {
   scroll-behavior: smooth;
 }
 
+li {
+  @apply relative pl-4;
+}
+
+li::before {
+  content: "t";
+  @apply absolute -ml-4;
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 }
+
 /* purgecss end ignore */

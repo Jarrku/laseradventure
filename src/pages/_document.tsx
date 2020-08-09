@@ -1,25 +1,28 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import * as React from "react";
-import "../i18n/i18next";
 
 export default class MyDocument extends Document<{ lang: string }> {
-  // static async getInitialProps(ctx: DocumentContext) {
-  //   const initialProps = await Document.getInitialProps(ctx);
+  static async getInitialProps(ctx: DocumentContext) {
+    const initialProps = await Document.getInitialProps(ctx);
 
-  //   const { pathname } = ctx;
-  //   const lang = pathname.startsWith("/fr") ? "fr" : "nl";
+    const { pathname } = ctx;
+    const lang = pathname.startsWith("/fr") ? "fr" : "nl";
 
-  //   return {
-  //     ...initialProps,
-  //     lang,
-  //   };
-  // }
+    return {
+      ...initialProps,
+      lang,
+    };
+  }
 
   render() {
     return (
-      <Html lang="nl">
+      <Html lang={this.props.lang}>
         <Head>
           <link rel="icon" href="/favicon.png" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Titillium+Web:wght@300;400;600&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body className="bg-var-coconutWhite">
           <Main />

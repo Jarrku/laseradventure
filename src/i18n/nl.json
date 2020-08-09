@@ -1,68 +1,9 @@
 {
-  "header": {
-    "contactUs": "Contacteer ons"
-  },
-  "body": {
-    "camalion": {
-      "title": "Nieuwe campagne beheren?",
-      "body": "Laad op of verifieer het nieuwe audio- en video-materiaal voor je toekomstige campagne.",
-      "cta": "Beheer campagnes"
-    },
-    "spotshop": {
-      "title": "Bestaande campagne zoeken?",
-      "body": "Grasduin in het SpotShop-archief met uitgezonden reclamespots per sector op VRT-radiozenders.",
-      "cta": "Raadpleeg Spotshop-archief",
-      "addendum": {
-        "nonLink": "Blijf op de hoogte van ",
-        "link": "nieuwe uitgezonden spots"
-      }
+  "index": {
+    "page": {
+      "title": "Goedkoop laserguns huren? • Laser Adventure • Vanaf €4,50",
+      "description": "Goedkope en kwalitatieve laserguns huren? Lasershooten op eigen locatie? Bij Laser Adventure ben je aan het juiste adres om je lasergame te huren."
     }
   },
-  "contactForm": {
-    "title": "Contacteer ons",
-    "body": "Heb je een vraag? Stel ze via dit formulier en we nemen zo spoedig mogelijk contact op.",
-    "success": "Formulier succesvol verstuurd",
-    "error": "Er is iets foutgelopen, probleem opnieuw",
-    "fields": {
-      "name": {
-        "label": "Naam",
-        "placeholder": ""
-      },
-      "company": {
-        "label": "Bedrijf",
-        "placeholder": ""
-      },
-      "email": {
-        "label": "E-mail",
-        "placeholder": ""
-      },
-      "message": {
-        "label": "Bericht",
-        "placeholder": ""
-      }
-    },
-    "cta": "Verzenden"
-  },
-  "footer": {
-    "items": {
-      "audio": "Audio",
-      "partnerships": "Partnerships",
-      "team": "Team",
-      "video": "Video",
-      "blog": "Blog",
-      "digital": "Digitaal",
-      "about": "Over Var",
-      "contact": "Contact",
-      "spotshop": "SpotShop",
-      "myVar": "MyVar"
-    },
-    "newsletter": {
-      "title": "Schrijf je in op onze nieuwsbrief.",
-      "placeholder": "Vul je e-mailadres in"
-    },
-    "links": {
-      "privacy": "Privacy",
-      "disclaimer": "Disclaimer"
-    }
-  }
+  "key": "hello world"
 }
