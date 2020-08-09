@@ -1,0 +1,60 @@
+{
+  "name": "laseradventure",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "next dev",
+    "build": "next build && next export",
+    "serve": "yarn build && serve out",
+    "deploy": "vercel",
+    "deploy:prod": "vercel --prod",
+    "lint": "concurrently 'yarn:lint:js' 'yarn:lint:css'",
+    "lint:js": "eslint ./src --max-warnings=0 --ext .ts,.tsx,.js,.jsx",
+    "lint:css": "stylelint \"src/**/*.{css,scss,sass}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,md,scss,css,sass}\" && yarn lint:js --fix && yarn lint:css --fix "
+  },
+  "dependencies": {
+    "i18next": "^19.6.3",
+    "next": "9.5.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-i18next": "^11.7.0",
+    "tailwindcss": "^1.6.2"
+  },
+  "devDependencies": {
+    "@foreachbe/eslint-config-react-app": "6.0.0",
+    "@foreachbe/stylelint-config-react-app": "4.0.0",
+    "@fullhuman/postcss-purgecss": "2.3.0",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.45",
+    "@typescript-eslint/eslint-plugin": "3.x",
+    "@typescript-eslint/parser": "3.x",
+    "autoprefixer": "^9.8.6",
+    "babel-eslint": "10.x",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.6.0",
+    "eslint-plugin-flowtype": "5.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.20.5",
+    "eslint-plugin-react-hooks": "4.0.8",
+    "husky": "^4.2.5",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "lint-staged": "^10.2.11",
+    "next-fonts": "^1.4.0",
+    "next-offline": "^5.0.2",
+    "next-optimized-images": "^2.6.2",
+    "postcss-import": "^12.0.1",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "typescript": "^3.9.7"
+  },
+  "eslintConfig": {
+    "extends": "@foreachbe/eslint-config-react-app"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
