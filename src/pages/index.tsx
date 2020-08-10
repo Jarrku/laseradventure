@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import SplashImage from "../images/landingpage-splash-image.jpg";
@@ -48,9 +49,11 @@ export default function Home() {
           <p className="font-light">
             Neem gerust contact met ons op om je laserguns te huren, dan helpen we je zo snel mogelijk verder!
           </p>
-          <button className="uppercase py-3 px-5 bg-blue-500 text-white rounded hover:bg-blue-700">
-            Contacteer ons
-          </button>
+          <Link href="/contact">
+            <a href="/contact" className="uppercase py-3 px-5 bg-blue-500 text-white rounded hover:bg-blue-700">
+              Contacteer ons
+            </a>
+          </Link>
         </div>
         <div>
           <ul className="space-y-4">
@@ -87,10 +90,7 @@ function ListItem({ title, content }: ListItemProps) {
     <li>
       <span className="uppercase text-blue-500 font-semibold">{title}</span>
       <br />
-      <span className="font-light">
-      {content}
-
-      </span>
+      <span className="font-light">{content}</span>
     </li>
   );
 }
