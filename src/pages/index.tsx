@@ -50,7 +50,7 @@ export default function Home() {
             Neem gerust contact met ons op om je laserguns te huren, dan helpen we je zo snel mogelijk verder!
           </p>
           <Link href="/contact">
-            <a href="/contact" className="uppercase py-3 px-5 bg-blue-500 text-white rounded hover:bg-blue-700">
+            <a href="/contact" className="uppercase py-3 px-5 bg-blue-500 text-white rounded hover:bg-blue-700 inline-block">
               Contacteer ons
             </a>
           </Link>
